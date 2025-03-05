@@ -6,9 +6,9 @@ public:
     
     for (const string& word : words) {
         string sortedWord = word;
-        sort(sortedWord.begin(), sortedWord.end());  // Sort the characters to check for anagrams
+        sort(sortedWord.begin(), sortedWord.end());  
         
-        if (sortedWord != prevSorted) {  // Only add if it's not an anagram of the previous word
+        if (sortedWord != prevSorted) { 
             result.push_back(word);
             prevSorted = sortedWord;
         }
