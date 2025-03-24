@@ -10,13 +10,12 @@ public:
         int digit2 = (j >= 0) ? num2[j] - '0' : 0;
         int sum = digit1 + digit2 + carry;
         
-        result += (sum % 10) + '0';  // Append last digit of sum
-        carry = sum / 10;  // Update carry
-        
+        result += (sum % 10) + '0';  
+        carry = sum / 10;  
         i--; j--;
     }
     
-    reverse(result.begin(), result.end());  // Reverse result to get the correct order
+    reverse(result.begin(), result.end());  
     return result;
     }
 };
