@@ -12,7 +12,7 @@ public:
         st.push(num);
     }
 
-    // For elements that have no next greater, we set -1
+   
     while (!st.empty()) {
         nge[st.top()] = -1;
         st.pop();
