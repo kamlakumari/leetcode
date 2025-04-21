@@ -10,12 +10,12 @@ public:
     int ping(int t) {
         requests.push(t); 
 
-        // Remove requests that are older than t - 3000
+        
         while (!requests.empty() && requests.front() < t - 3000) {
             requests.pop();
         }
 
-        return requests.size(); // Number of recent calls
+        return requests.size(); 
     }
 };
 
