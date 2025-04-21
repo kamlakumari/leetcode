@@ -8,7 +8,7 @@ public:
     }
 
     int ping(int t) {
-        requests.push(t); // Add current ping
+        requests.push(t); 
 
         // Remove requests that are older than t - 3000
         while (!requests.empty() && requests.front() < t - 3000) {
