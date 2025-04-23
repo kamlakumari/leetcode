@@ -10,7 +10,7 @@ public:
         int n = s.length();
         
         for (int i = 0; i < n; i++) {
-            // If current value is less than next, subtract it
+           
             if (i + 1 < n && roman[s[i]] < roman[s[i + 1]]) {
                 total -= roman[s[i]];
             } else {
