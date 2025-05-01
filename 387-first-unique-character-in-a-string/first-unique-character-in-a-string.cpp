@@ -15,6 +15,6 @@ public:
             }
         }
 
-        return -1; // No unique character
+        return -1; 
     }
 };
