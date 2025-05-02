@@ -11,7 +11,7 @@ class Solution {
             numMap[nums[i]] = i;
         }
 
-        return {}; // no solution found
+        return {}; 
     }
 
 };
