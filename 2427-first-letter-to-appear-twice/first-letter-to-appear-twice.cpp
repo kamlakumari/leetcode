@@ -5,7 +5,7 @@ public:
 
     for (char ch : s) {
         if (seen.count(ch)) {
-            return ch;  // First letter to appear twice
+            return ch; 
         }
         seen.insert(ch);
     }
