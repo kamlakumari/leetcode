@@ -14,7 +14,7 @@ public:
         int left = 0;
 
         for (int right = 0; right < idxs.size(); ++right) {
-            // Number of deletions required to make subarray equal
+            
             while ((idxs[right] - idxs[left] + 1) - (right - left + 1) > k) {
                 left++;
             }
