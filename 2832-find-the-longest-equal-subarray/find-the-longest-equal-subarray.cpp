@@ -3,7 +3,6 @@ public:
     int longestEqualSubarray(vector<int>& nums, int k) {
       unordered_map<int, vector<int>> positions;
     
-    // Store the indices of each number
     for (int i = 0; i < nums.size(); ++i) {
         positions[nums[i]].push_back(i);
     }
