@@ -8,7 +8,7 @@ public:
     for (int right = 0; right < s.length(); ++right) {
         count[s[right] - 'a']++;
 
-        // If any character occurs more than twice, move the left pointer
+       
         while (count[s[right] - 'a'] > 2) {
             count[s[left] - 'a']--;
             left++;
