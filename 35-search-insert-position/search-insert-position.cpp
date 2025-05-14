@@ -14,6 +14,6 @@ int left = 0, right = nums.size() - 1;
             right = mid - 1;
     }
 
-    return left; // Position where target should be inserted
+    return left; 
 }
 };
