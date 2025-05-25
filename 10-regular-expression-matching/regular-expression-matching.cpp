@@ -20,7 +20,7 @@ public:
                 // Current characters match
                 dp[i][j] = dp[i - 1][j - 1];
             } else if (p[j - 1] == '*') {
-                // Consider zero occurrence
+                
                 dp[i][j] = dp[i][j - 2];
 
                 
