@@ -3,7 +3,7 @@ public:
     bool isMatch(string s, string p) {
       int m = s.length(), n = p.length();
     
-    // Create DP table with default false
+    
     vector<vector<bool>> dp(m + 1, vector<bool>(n + 1, false));
     dp[0][0] = true; 
 
