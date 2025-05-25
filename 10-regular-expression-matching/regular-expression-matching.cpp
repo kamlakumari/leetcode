@@ -5,7 +5,7 @@ public:
     
     // Create DP table with default false
     vector<vector<bool>> dp(m + 1, vector<bool>(n + 1, false));
-    dp[0][0] = true; // Empty string matches empty pattern
+    dp[0][0] = true; 
 
     
     for (int j = 2; j <= n; j += 2) {
