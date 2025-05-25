@@ -17,7 +17,7 @@ public:
     for (int i = 1; i <= m; i++) {
         for (int j = 1; j <= n; j++) {
             if (p[j - 1] == '.' || p[j - 1] == s[i - 1]) {
-                // Current characters match
+                
                 dp[i][j] = dp[i - 1][j - 1];
             } else if (p[j - 1] == '*') {
                 
