@@ -13,7 +13,7 @@ public:
             if (!st.empty()) {
                 maxLen = max(maxLen, i - st.top());
             } else {
-                st.push(i); // unmatched ')', reset base index
+                st.push(i); 
             }
         }
     }
