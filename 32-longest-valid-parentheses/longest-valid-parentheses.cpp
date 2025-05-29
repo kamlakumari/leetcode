@@ -9,7 +9,7 @@ public:
         if (s[i] == '(') {
             st.push(i); 
         } else {
-            st.pop(); // pop previous '('
+            st.pop(); 
             if (!st.empty()) {
                 maxLen = max(maxLen, i - st.top());
             } else {
