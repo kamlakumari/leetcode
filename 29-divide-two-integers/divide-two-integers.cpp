@@ -8,7 +8,7 @@ public:
         
         bool negative = (dividend < 0) ^ (divisor < 0);
 
-        // Convert to long to handle abs(INT_MIN)
+        
         long long dvd = abs((long long)dividend);
         long long dvs = abs((long long)divisor);
         long long quotient = 0;
