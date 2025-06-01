@@ -13,7 +13,6 @@ public:
     ListNode* swapPairs(ListNode* head) {
          if (!head || !head->next) return head;
 
-        // Initialize pointers
         ListNode* newHead = head->next;
         ListNode* prev = nullptr;
 
@@ -21,16 +20,13 @@ public:
             ListNode* first = head;
             ListNode* second = head->next;
 
-            // Swapping
             first->next = second->next;
             second->next = first;
 
-            // Link previous pair with current
             if (prev) {
                 prev->next = second;
             }
 
-            // Move pointers ahead
             prev = first;
             head = first->next;
         }
